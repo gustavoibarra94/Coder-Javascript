@@ -1,0 +1,183 @@
+// Estilos generales
+
+.container{
+
+    h2{
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: large;
+    }
+
+
+}
+
+
+
+ul {
+
+    font-weight: bold;
+
+
+    p {
+        font-size: large;
+        font-weight: normal;
+        
+
+    }
+
+
+
+
+}
+
+
+
+
+// Estilo de página de Contacto 
+
+
+
+
+
+
+
+
+    
+.caja-formulario
+{
+    @include flex-just;
+    margin-top: 1.5rem;
+
+    .formulario
+    { width: 25rem;}
+
+    div {
+
+        padding-left: 15px;
+    }
+    
+  
+}
+
+
+
+
+
+
+
+
+// Estilo de página de FAQ 
+
+
+.linkacontacto {
+    @include flex-just;
+    -ms-flex-item-align: center;
+    margin-left: auto;
+    padding: 0.7rem;
+    width: 11rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.faq {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+
+
+// Estilo de página de Index 
+
+.bajo-banner
+
+{   text-align: center;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+// Estilo de página de Juego 
+
+.juegos
+{
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.personajes
+{
+    text-align: center;
+    
+        h3
+        {margin-top: 1rem;}
+
+
+}
+
+
+
+
+.tarjetas
+{
+    margin-top: 1rem;
+
+}
+
+.comprar
+{
+
+    @include flex-just;
+    padding: 1rem;
+}
+
+
+
+
+// Estilo de página de Nosotros 
+
+.titulonosotros
+{ 
+    margin-top: 1rem;
+}
+
+
+// media
+
+@media screen and (max-width: 612px) {
+
+    p {
+
+        padding-left: 15px;
+    }
+
+    h2 {
+
+        padding-left: 15px;
+    }
+
+
+    
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .linkacontacto {
+        
+        margin: auto;
+        padding-left: 15px;
+        
+    }
+    
+}

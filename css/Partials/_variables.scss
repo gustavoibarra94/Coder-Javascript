@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "papyrus";
+    src: url("../fonts/papyrus.ttf");
+ 
+}
+
+
+@mixin flex-just {
+    display: flex;
+    justify-content: center;
+}
