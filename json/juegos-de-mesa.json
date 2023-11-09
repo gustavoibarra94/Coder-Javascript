@@ -4,7 +4,7 @@
         "nombre": "Juego 1",
         "descripcion": "Descripción del Juego 1",
         "precio": 129000,
-        "imagen": "../img/Producto1.jpg",
+        "imagen": "../img/producto1.jpg",
         "oferta": false
     },
     {
@@ -12,7 +12,7 @@
         "nombre": "Juego 2",
         "descripcion": "Descripción del Juego 1",
         "precio": 129000,
-        "imagen": "../img/Producto1.jpg",
+        "imagen": "../img/producto1.jpg",
         "oferta": false
     },
     {
@@ -20,7 +20,7 @@
         "nombre": "Juego 3",
         "descripcion": "Descripción del Juego 1",
         "precio": 129000,
-        "imagen": "../img/Producto1.jpg",
+        "imagen": "../img/producto1.jpg",
         "oferta": false
     },
     {
@@ -28,7 +28,7 @@
         "nombre": "Juego 4",
         "descripcion": "Descripción del Juego 1",
         "precio": 129000,
-        "imagen": "../img/Producto1.jpg",
+        "imagen": "../img/producto1.jpg",
         "oferta": true
     },
     {
@@ -36,7 +36,7 @@
         "nombre": "Juego 5",
         "descripcion": "Descripción del Juego 1",
         "precio": 129000,
-        "imagen": "../img/Producto1.jpg",
+        "imagen": "../img/producto1.jpg",
         "oferta": false
     },
     {
@@ -44,7 +44,7 @@
         "nombre": "Juego 6",
         "descripcion": "Descripción del Juego 1",
         "precio": 129000,
-        "imagen": "../img/Producto1.jpg",
+        "imagen": "../img/producto1.jpg",
         "oferta": true
     },
     {
@@ -52,7 +52,7 @@
         "nombre": "Juego 7",
         "descripcion": "Descripción del Juego 1",
         "precio": 129000,
-        "imagen": "../img/Producto1.jpg",
+        "imagen": "../img/producto1.jpg",
         "oferta": false
     },
     {
@@ -60,7 +60,7 @@
         "nombre": "Juego 8",
         "descripcion": "Descripción del Juego 2",
         "precio": 129000,
-        "imagen": "../img/Producto1.jpg",
+        "imagen": "../img/producto1.jpg",
         "oferta": true
     }
 ]
