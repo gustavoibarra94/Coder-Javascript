@@ -1,3 +1,4 @@
+
 // DARK MODE
 
 const botonModoOscuro = document.getElementById('modo-oscuro');
@@ -19,6 +20,4 @@ botonModoOscuro.addEventListener('click', () => {
     }
 });
 
-
-//********************************************************************/
 

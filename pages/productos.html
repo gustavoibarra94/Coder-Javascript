@@ -40,10 +40,6 @@
                 <button id="modo-oscuro">Cambiar Modo</button>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -58,9 +54,30 @@
 
 <main>
 
-    
-    
+  <div class="container">
+    <div class="container-fluid flip-in-hor-bottom">
 
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4">
+                <label for="ordenar">Ordenar por:</label>
+                <select id="ordenar" class="form-select" onchange="ordenarProductos(this.value)">
+                    <option value="ascendente">A-Z</option>
+                    <option value="descendente">Z-A</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="filtrar">Filtrar por oferta:</label>
+                <select id="filtrar" class="form-select" onchange="filtrarProductos(this.value)">
+                    <option value="todos">Todos</option>
+                    <option value="oferta">Oferta</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center" id="productos-container">
+        </div>
+    </div>
+</div>
 
 </main>
 
@@ -84,6 +101,8 @@
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/productos.js"></script>
+    
 
 
 </body>

@@ -40,10 +40,6 @@
                 <button id="modo-oscuro">Cambiar Modo</button>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -58,40 +54,38 @@
 
 <main>
 
-    <div class="container flip-in-hor-bottom">
+  <div class="container flip-in-hor-bottom">
 
-        <img class="rounded" src="../img/banner contacto.jpg" alt="Caballero peleando contra dragón" style="height: 200px; width: 100%; object-fit: cover;">
-        <div class="caja-formulario container">
-            <form class="formulario">
+      <img class="rounded" src="../img/banner contacto.jpg" alt="Caballero peleando contra dragón" style="height: 200px; width: 100%; object-fit: cover;">
+      <div class="caja-formulario container">
+          <form class="formulario" id="formulario-contacto">
+            
+              <div class="mb-3">
+                  <label for="nombre">Nombre</label>
+                  <input class="form-control" type="text" id="nombre" placeholder="Escribí tu nombre" required>
+              </div>
               
-                <div class="mb-3">
-                    <label for="Nombre">Nombre</label>
-                    <input class="form-control" type="text" placeholder="Escribí tu nombre">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="Apellido">Apellido</label>
-                    <input class="form-control" type="text" placeholder="Escribí tu apellido">
-                </div>
+              <div class="mb-3">
+                  <label for="apellido">Apellido</label>
+                  <input class="form-control" type="text" id="apellido" placeholder="Escribí tu apellido" required>
+              </div>
 
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribí tu dirección de correo electrónico">
-                    <div id="emailHelp" class="form-text">No compartiremos tus datos con nadie más.</div>
-                </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Escribí tu dirección de correo electrónico" required>
+                  <div id="emailHelp" class="form-text">No compartiremos tus datos con nadie más.</div>
+              </div>
 
-                
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Escribí un comentario</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Dejanos tu comentario"></textarea>
-                </div>
-                  <div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                  </div>
-                    
+              <div class="mb-3">
+                  <label for="comentario" class="form-label">Escribí un comentario</label>
+                  <textarea class="form-control" id="comentario" rows="3"  placeholder="Dejanos tu comentario" required></textarea>
+              </div>
 
-            </form>
-        </div>
+              <div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+          </form>
+      </div>
 
 </div>
 </main>
@@ -116,6 +110,7 @@
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/formulario.js"></script>
 
 
 </body>
