@@ -3,52 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Games</title>
+    <title>Games</title>
+    
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
-    <meta name="description" content="Si tenes alguna duda, comentario y sugerencia, dejanos tus datos y te responderemos a la brevedad.">
-    <meta name="keywords" content="juegos, amigos, comunidad, juegos de mesa, fantasía, orcos, contacto">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <meta name="description" content="Bienvenido! Sumérgete en un mundo de fantasía con nuestros Juegos de Mesa únicos.">
+    <meta name="keywords" content="juegos, amigos, comunidad, juegos de mesa, fantasía, orcos">
 </head>
 <body>
     
-    <header>
+<header>
 
-        <div class="container bounce-top">
-
-            <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                    <a href="../index.html"><img class="navbar-brand" width="300" src="../img/Logo.png" alt="Logo de empresa"  > </a> 
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/juego1.html">Juego</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/faq.html">FAQ</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/sobrenosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-        <hr>
+    <div class="container bounce-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <a href="../index.html"><img class="navbar-brand" width="80" src="../img/Logo.png" alt="Logo de empresa"  > </a> 
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./carrito.html">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <button id="modo-oscuro">Cambiar Modo</button>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
-    </header>
+      </nav>
+
+
+<hr>
+</div>
+
+</header>
+
 
 
 <main>
@@ -91,23 +96,27 @@
 </div>
 </main>
 
-
-
 <footer>
-
-    <div class="container">
-
-        <hr>
-
-            <div class="container bg-body-tertiary rounded">
-              <img class="navbar-brand" width="300" src="../img/Logo.png" alt="Logo de empresa"  >
-            </div>
-    </div>
-
-    
-
+ 
+  <div class="container bg-body-tertiary rounded pie-de-pagina">
+    <hr>
+      <div class="row pie-de-pagina">
+          <div class="col-md-6">
+              <img class="navbar-brand" width="80" src="../img/Logo.png" alt="Logo de empresa">
+          </div>
+          <div class="col-md-6 align-right">
+              <p>Juramento 1234, Buenos Aires<br>
+                  +(54) 11 4777 1111<br>
+                  contacto@games.com.ar<br>
+                  Lun-Vie: 9 a 18 hs</p>
+          </div>
+      </div>
+  </div>
 </footer>
 
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+
+
 </body>
 </html>

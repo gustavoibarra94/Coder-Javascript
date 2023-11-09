@@ -1,0 +1,43 @@
+body.dark-mode {
+    background-color: #000000  !important; 
+    color: #fff !important;
+}
+
+body.dark-mode header {
+    background-color: #000000  !important; 
+}
+
+
+body.dark-mode a {
+    color: #00aaff !important; 
+}
+
+
+body.dark-mode button {
+    background-color: #222 !important; 
+    color: #fff !important; 
+}
+
+body.dark-mode .navbar {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .bajo-banner {
+
+    background-color: #000000 !important;
+    color: #ffffff !important;
+
+}
+
+body.dark-mode .pie-de-pagina {
+
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .navbar-nav {
+
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}

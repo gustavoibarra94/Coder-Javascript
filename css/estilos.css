@@ -1,184 +1,32 @@
-@font-face {
-  font-family: "papyrus";
-  src: url("../fonts/papyrus.ttf");
-}
-* {
-  margin: 0rem;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: x-large;
-  font-family: "papyrus";
+.align-right {
+    text-align: right;
 }
 
-.bounce-top {
-  animation: bounce-top 0.9s both;
+body {
+    font-family: Arial, sans-serif;
 }
 
-.heartbeat :hover, .imagen-animada :hover {
-  animation: heartbeat 1.5s ease-in-out infinite both;
+nav ul {
+    list-style: none;
+    background: #f8f8f8;
+    padding: 0;
+    margin: 0;
 }
 
-.flip-in-hor-bottom {
-  animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@keyframes bounce-top {
-  0% {
-    transform: translateY(-45px);
-    animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    transform: translateY(-24px);
-    animation-timing-function: ease-in;
-  }
-  65% {
-    transform: translateY(-12px);
-    animation-timing-function: ease-in;
-  }
-  82% {
-    transform: translateY(-6px);
-    animation-timing-function: ease-in;
-  }
-  93% {
-    transform: translateY(-4px);
-    animation-timing-function: ease-in;
-  }
-  25%, 55%, 75%, 87% {
-    transform: translateY(0px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translateY(0px);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
-@keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-  }
-}
-@keyframes flip-in-hor-bottom {
-  0% {
-    transform: rotateX(80deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(0);
-    opacity: 1;
-  }
-}
-.container h2 {
-  font-size: xx-large;
-  font-weight: bold;
-}
-.container p {
-  font-size: large;
+nav li {
+    display: inline;
+    margin: 10px;
 }
 
-ul {
-  font-weight: bold;
-}
-ul p {
-  font-size: large;
-  font-weight: normal;
-}
-
-.caja-formulario {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
-.caja-formulario .formulario {
-  width: 25rem;
-}
-.caja-formulario div {
-  padding-left: 15px;
-}
-
-.linkacontacto {
-  display: flex;
-  justify-content: center;
-  -ms-flex-item-align: center;
-  margin-left: auto;
-  padding: 0.7rem;
-  width: 11rem;
-  height: 3rem;
-  margin-bottom: 2rem;
-}
-
-.faq {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.navbar {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .bajo-banner {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.juegos {
-  padding: 1rem;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.personajes {
-  text-align: center;
-}
-.personajes h3 {
-  margin-top: 1rem;
-}
-
-.tarjetas {
-  margin-top: 1rem;
-}
-
-.comprar {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.titulonosotros {
-  margin-top: 1rem;
-}
-
-@media screen and (max-width: 612px) {
-  p {
-    padding-left: 15px;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
-  h2 {
-    padding-left: 15px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .linkacontacto {
-    margin: auto;
-    padding-left: 15px;
-  }
-}/*# sourceMappingURL=estilos.css.map */
+  
