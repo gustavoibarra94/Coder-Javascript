@@ -66,14 +66,18 @@
                 </select>
             </div>
             <div class="col-md-4">
-                <label for="filtrar">Filtrar por oferta:</label>
-                <select id="filtrar" class="form-select" onchange="filtrarProductos(this.value)">
+              <label for="filtrar-oferta">Filtrar por oferta:</label>
+                <select id="filtrar-oferta" class="form-select" onchange="filtrarProductos()">
                     <option value="todos">Todos</option>
                     <option value="oferta">Oferta</option>
                 </select>
             </div>
         </div>
         <hr>
+          <div id="notificacion-compra" class="position-fixed top-0 end-0 p-3" style="z-index: 5">
+          
+          </div>
+        
         <div class="row justify-content-center" id="productos-container">
         </div>
     </div>
@@ -101,6 +105,7 @@
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/carrito.js"></script>
     <script src="../js/productos.js"></script>
     
 

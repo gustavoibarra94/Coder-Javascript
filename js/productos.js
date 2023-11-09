@@ -1,20 +1,19 @@
+let productos = [];
+
 document.addEventListener('DOMContentLoaded', function () {
-    const jsonFilePath = new URL('../json/juegos-de-mesa.json', window.location.href).href;
+    const jsonProductosPath = new URL('../json/juegos-de-mesa.json', window.location.href).href;
+    
 
-    let productos = []; 
-
-   
     function cargarProductos() {
-        fetch(jsonFilePath)
+        fetch(jsonProductosPath)
             .then(response => response.json())
             .then(data => {
-                productos = data; 
+                productos = data;
                 mostrarProductos(productos);
             })
             .catch(error => console.error('Error fetching data:', error));
     }
 
-   
     function mostrarProductos(productosMostrar) {
         const productosContainer = document.getElementById('productos-container');
         productosContainer.innerHTML = '';
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="card-body">
                     <h5 class="card-title">${producto.nombre}</h5>
                     <p class="card-text">${producto.descripcion}</p>
-                    <p class="card-text">${producto.precio.toFixed(2)} USD</p>
+                    <p class="card-text">${producto.precio.toFixed(2)} ARS</p>
                     <button class="btn btn-primary" onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
                 </div>
             `;
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function ordenarProductos(orden) {
-        const productosOrdenados = [...productos]; 
+        const productosOrdenados = [...productos];
 
         if (orden === 'ascendente') {
             productosOrdenados.sort((a, b) => a.nombre.localeCompare(b.nombre));
@@ -45,29 +44,54 @@ document.addEventListener('DOMContentLoaded', function () {
             productosOrdenados.sort((a, b) => b.nombre.localeCompare(a.nombre));
         }
 
-        mostrarProductos(productosOrdenados);
+        return productosOrdenados;
     }
 
-   
-    function filtrarProductos(oferta) {
-        const productosFiltrados = productos.filter(producto => {
-            if (oferta === 'oferta') {
-                return producto.oferta === true;
-            } else {
-                return true; 
-            }
-        });
+    function filtrarOferta(productosFiltrados) {
+        const oferta = document.getElementById('filtrar-oferta').value;
+
+        if (oferta !== 'todos') {
+            return productosFiltrados.filter(producto => producto.oferta);
+        }
+
+        return productosFiltrados;
+    }
+
+    function aplicarFiltros() {
+        const orden = document.getElementById('ordenar').value;
+        let productosFiltrados = ordenarProductos(orden);
+        productosFiltrados = filtrarOferta(productosFiltrados);
 
         mostrarProductos(productosFiltrados);
     }
 
     cargarProductos();
 
-    document.getElementById('ordenar').addEventListener('change', function () {
-        ordenarProductos(this.value);
-    });
+    document.getElementById('ordenar').addEventListener('change', aplicarFiltros);
+    document.getElementById('filtrar-oferta').addEventListener('change', aplicarFiltros);
 
-    document.getElementById('filtrar').addEventListener('change', function () {
-        filtrarProductos(this.value);
-    });
+    cargarCarrito();
 });
+
+function agregarAlCarrito(id) {
+    const productoSeleccionado = productos.find(producto => producto.id === id);
+
+    if (productoSeleccionado) {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        carrito.push(productoSeleccionado);
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+
+        
+        mostrarNotificacion('Producto añadido al carrito');
+    }
+
+    cargarCarrito();
+}
+
+function mostrarNotificacion(mensaje) {
+    const notificacionCompra = document.getElementById('notificacion-compra');
+    const notificacion = document.createElement('div');
+    notificacion.className = 'notificacion';
+    notificacion.textContent = mensaje;
+    notificacionCompra.appendChild(notificacion);
+}

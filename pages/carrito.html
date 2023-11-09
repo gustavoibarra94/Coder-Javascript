@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 <header>
 
     <div class="container bounce-top">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+    <nav class="navbar navbar-expand-lg bg-body-terciaria rounded">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,18 +51,32 @@
 </header>
 
 
-
 <main>
+  <div class="container-fluid flip-in-hor-bottom">
+      <div class="row justify-content-center mt-4">
+      </div>
+      <hr>
+      <div class="row justify-content-center">
+          <div id="carrito-actual" class="col-md-8 text-center">
+          </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div id="carrito-total" class="col-md-8 text-center mt-3">
+      </div>
+          <div class="col-md-8 text-center">
+              <button id="boton-comprar" class="btn btn-primary me-2">Comprar</button>
+              <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+          </div>
 
-    
-    
-
-
+      </div>
+  </div>
 </main>
+
 
 <footer>
  
-  <div class="container bg-body-tertiary rounded pie-de-pagina">
+  <div class="container bg-body-terciaria rounded pie-de-pagina">
     <hr>
       <div class="row pie-de-pagina">
           <div class="col-md-6">
@@ -80,6 +94,8 @@
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/productos.js"></script>
 
 
 </body>
