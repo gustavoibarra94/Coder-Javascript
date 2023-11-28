@@ -13,7 +13,7 @@ function mostrarNotificacion(mensaje) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const jsonProductosPath = new URL('../json/juegos-de-mesa.json', window.location.href).href;
+    const jsonProductosPath = new URL('https://gustavoibarra94.github.io/Coder-Javascript/json/juegos-de-mesa.json', window.location.href).href;
     
 
     function cargarProductos() {
