@@ -3,9 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const carritoTotal = document.getElementById('carrito-total');
     const botonComprar = document.getElementById('boton-comprar');
 
+
+
     function cargarCarrito() {
         const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
+       // carritoActual.innerHTML = '';
+
+       if (carritoActual && carritoTotal) {
         carritoActual.innerHTML = '';
 
         carrito.forEach(producto => {
@@ -58,7 +63,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const precioTotal = carrito.reduce((total, producto) => total + producto.precio, 0);
         carritoTotal.textContent = `TOTAL: ${precioTotal.toFixed(2)} ARS`;
+    } else {
+
+        console.error ('Los elementos carrito-actual o carrito-total no fueron encontrados en el DOM.')
     }
+}
     
 
     function comprar() {
