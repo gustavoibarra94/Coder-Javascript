@@ -52,6 +52,11 @@ nav li {
     height: auto; 
 }
 
+.imagen-carrusel {
+  height: 500px; 
+  object-fit: cover; 
+}
+
 
 #notificacion-compra {
     position: fixed;

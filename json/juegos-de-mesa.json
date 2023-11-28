@@ -1,66 +1,66 @@
 [
     {
         "id": 1,
-        "nombre": "Juego 1",
-        "descripcion": "Descripción del Juego 1",
-        "precio": 129000,
+        "nombre": "Ohrdrak Basic",
+        "descripcion": "Juego base",
+        "precio": 35000,
         "imagen": "../img/producto1.jpg",
         "oferta": false
     },
     {
         "id": 2,
-        "nombre": "Juego 2",
-        "descripcion": "Descripción del Juego 1",
-        "precio": 129000,
+        "nombre": "Ohrdrak Premium",
+        "descripcion": "Juego base + Figuras de metal",
+        "precio": 90000,
         "imagen": "../img/producto1.jpg",
         "oferta": false
     },
     {
         "id": 3,
-        "nombre": "Juego 3",
-        "descripcion": "Descripción del Juego 1",
-        "precio": 129000,
-        "imagen": "../img/producto1.jpg",
+        "nombre": "Catán Basic",
+        "descripcion": "Juego base",
+        "precio": 15000,
+        "imagen": "../img/producto2.jpg",
         "oferta": false
     },
     {
         "id": 4,
-        "nombre": "Juego 4",
-        "descripcion": "Descripción del Juego 1",
-        "precio": 129000,
-        "imagen": "../img/producto1.jpg",
+        "nombre": "Catán Premium",
+        "descripcion": "Juego base + figuras mejoradas",
+        "precio": 25000,
+        "imagen": "../img/producto2.jpg",
         "oferta": true
     },
     {
         "id": 5,
-        "nombre": "Juego 5",
-        "descripcion": "Descripción del Juego 1",
-        "precio": 129000,
-        "imagen": "../img/producto1.jpg",
+        "nombre": "Catán Piratas y Exploradores Basic",
+        "descripcion": "Juego base",
+        "precio": 13000,
+        "imagen": "../img/producto3.jpg",
         "oferta": false
     },
     {
         "id": 6,
-        "nombre": "Juego 6",
-        "descripcion": "Descripción del Juego 1",
-        "precio": 129000,
-        "imagen": "../img/producto1.jpg",
+        "nombre": "Catán Piratas y Exploradores Premium",
+        "descripcion": "Juego base + figuras mejoradas",
+        "precio": 22000,
+        "imagen": "../img/producto3.jpg",
         "oferta": true
     },
     {
         "id": 7,
-        "nombre": "Juego 7",
-        "descripcion": "Descripción del Juego 1",
-        "precio": 129000,
-        "imagen": "../img/producto1.jpg",
+        "nombre": "Catán Junior Basic",
+        "descripcion": "Juego base",
+        "precio": 12000,
+        "imagen": "../img/producto4.jpg",
         "oferta": false
     },
     {
         "id": 8,
-        "nombre": "Juego 8",
-        "descripcion": "Descripción del Juego 2",
-        "precio": 129000,
-        "imagen": "../img/producto1.jpg",
+        "nombre": "Catán Junior Premium",
+        "descripcion": "Juego base + figuras mejoradas",
+        "precio": 20000,
+        "imagen": "../img/producto4.jpg",
         "oferta": true
     }
 ]

@@ -1,5 +1,17 @@
 let productos = [];
 
+
+function mostrarNotificacion(mensaje) {
+    const notificacionCompra = document.getElementById('notificacion-compra');
+    if (notificacionCompra) {
+        const notificacion = document.createElement('div');
+        notificacion.className = 'notificacion';
+        notificacion.textContent = mensaje;
+        notificacionCompra.appendChild(notificacion);
+    }
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const jsonProductosPath = new URL('../json/juegos-de-mesa.json', window.location.href).href;
     
@@ -88,10 +100,3 @@ function agregarAlCarrito(id) {
     cargarCarrito();
 }
 
-function mostrarNotificacion(mensaje) {
-    const notificacionCompra = document.getElementById('notificacion-compra');
-    const notificacion = document.createElement('div');
-    notificacion.className = 'notificacion';
-    notificacion.textContent = mensaje;
-    notificacionCompra.appendChild(notificacion);
-}

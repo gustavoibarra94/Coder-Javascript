@@ -39,8 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
             cardText.className = 'card-text';
             cardText.textContent = `Precio unitario: ${producto.precio.toFixed(2)} ARS`;
 
+            const eliminarButton = document.createElement('button');
+            eliminarButton.className = 'btn btn-danger';
+            eliminarButton.textContent = 'Eliminar';
+            eliminarButton.addEventListener('click', () => eliminarDelCarrito(producto.id));
+
             cardBody.appendChild(cardTitle);
             cardBody.appendChild(cardText);
+            cardBody.appendChild(eliminarButton);
 
             colBody.appendChild(cardBody);
             row.appendChild(colImg);
@@ -53,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const precioTotal = carrito.reduce((total, producto) => total + producto.precio, 0);
         carritoTotal.textContent = `TOTAL: ${precioTotal.toFixed(2)} ARS`;
     }
+    
 
     function comprar() {
 
@@ -64,6 +71,19 @@ document.addEventListener('DOMContentLoaded', function () {
     function vaciarCarrito() {
         localStorage.removeItem('carrito');
         cargarCarrito();
+    }
+
+    
+
+    function eliminarDelCarrito(id) {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const indiceProducto = carrito.findIndex(producto => producto.id === id);
+    
+        if (indiceProducto !== -1) {
+            carrito.splice(indiceProducto, 1);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            cargarCarrito();
+        }
     }
 
     cargarCarrito();
