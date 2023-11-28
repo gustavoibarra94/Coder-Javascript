@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function cargarCarrito() {
         const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-       // carritoActual.innerHTML = '';
+       carritoActual.innerHTML = '';
 
        if (carritoActual && carritoTotal) {
         carritoActual.innerHTML = '';
